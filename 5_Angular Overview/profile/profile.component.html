@@ -1,0 +1,19 @@
+<h2>Profile Show</h2>
+<div>
+	<p>Name: <input type="string" class="form-input"[(ngModel)]="name"></p>
+	<p>Age: <input type="number" class="form-input"[(ngModel)]="age"></p>
+	<p>Sex: <select class="form-input"[(ngModel)]="sex">
+		<option value="Nam">Nam</option>
+		<option value="Nữ">Nữ</option>
+	</select></p>
+	<p>Email: <input type="string" class="form-input"[(ngModel)]="email"></p>
+</div>
+<div>
+	<button class="form-input" (click)="show()"> TShow </button>
+</div>
+<div class="output">
+	<h4>Name: {{output[0]}}</h4>
+	<h4>Age: {{output[1]}}</h4>
+	<h4>Sex: {{output[2]}}</h4>
+	<h4>Email: {{output[3]}}</h4>
+</div>
